@@ -16,6 +16,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="AT4-mq-MoH">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="milk" translatesAutoresizingMaskIntoConstraints="NO" id="HcX-zn-7gR">
                                 <rect key="frame" x="65" y="92" width="263" height="250"/>
                                 <constraints>
@@ -27,7 +30,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fresh milk, on demand" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jry-qW-sB8">
                                 <rect key="frame" x="85" y="362" width="223" height="27.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -35,10 +38,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="HcX-zn-7gR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="65" id="7FK-xH-sqO"/>
+                            <constraint firstItem="AT4-mq-MoH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="9O7-w0-ekO"/>
+                            <constraint firstItem="AT4-mq-MoH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AXA-0L-hNK"/>
                             <constraint firstItem="Jry-qW-sB8" firstAttribute="centerX" secondItem="HcX-zn-7gR" secondAttribute="centerX" id="H8R-Yo-bCR"/>
                             <constraint firstItem="HcX-zn-7gR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="33" id="K8z-9f-SXJ"/>
+                            <constraint firstAttribute="bottom" secondItem="AT4-mq-MoH" secondAttribute="bottom" id="UpS-db-vX1"/>
                             <constraint firstItem="Jry-qW-sB8" firstAttribute="top" secondItem="HcX-zn-7gR" secondAttribute="bottom" constant="20" id="VRJ-CI-Whl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HcX-zn-7gR" secondAttribute="trailing" constant="65" id="XFK-ug-dVI"/>
+                            <constraint firstItem="AT4-mq-MoH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dLF-Zv-tep"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -48,6 +55,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="background" width="360" height="360"/>
         <image name="milk" width="500" height="500"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
